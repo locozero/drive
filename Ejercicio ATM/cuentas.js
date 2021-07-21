@@ -1,8 +1,17 @@
 function message() {
   var input1 = document.getElementById("typeEmailX").value;
   var input2 = document.getElementById("typePasswordX").value;
-console.log(input1)
-console.log(input2)
+  
+    if (input1 == usuario1.cuentanum && input2 == usuario1.pin) {
+      alert("Welcome to Maya Bank Mali");
+      window.location.href = "Welcome.html"
+    } else if (input1 == usuario2.cuentanum && input2 == usuario2.pin) {
+      alert("Welcome to Maya Bank Gera");
+    } else if (input1 == usuario3.cuentanum && input2 == usuario3.pin) {
+      alert("Welcome to Maya Bank Maui");
+    } else {
+      alert("Account does not exist");
+    }
 }
 
 class banco {
@@ -17,18 +26,6 @@ class banco {
 
   verinfo() {
     document.write(this.info + "<br>" + "<br>");
-  }
-}
-
-function aprobadocuenta() {
-  if (input1 == usuario1.cuentanum && input2 == usuario1.pin) {
-    console.log("Welcome to Maya Bank Mali");
-  } else if (input1 == 222 && input2 == 333) {
-    console.log("Welcome to Maya Bank Gera");
-  } else if (input1 == 333 && input2 == 444) {
-    console.log("Welcome to Maya Bank Maui");
-  } else {
-    ("Account does not exist");
   }
 }
 
